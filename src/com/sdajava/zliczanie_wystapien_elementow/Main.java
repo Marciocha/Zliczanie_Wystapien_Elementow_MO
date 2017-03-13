@@ -1,6 +1,5 @@
 package com.sdajava.zliczanie_wystapien_elementow;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -21,6 +20,12 @@ public class Main {
                 wynik = wynik + 1;
             }
         }
-        System.out.println("Wartosc: " + n + " wystepuje: " + wynik + "razy");
+        if(wynik == 1) {
+            System.out.println("Wartosc: " + n + " wystepuje: " + wynik + " raz");
+        }else if(wynik > 1){
+            System.out.println("Wartosc: " + n + " wystepuje: " + wynik + " razy");
+        }else{
+            System.out.println("Wartosc: " + n + " nie wystepuje");
+        }
     }
 }
